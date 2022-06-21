@@ -1,6 +1,6 @@
 # 1.SSM整合
 
-![SSM](E:\笔记\SSMimg\SSM.png)
+![SSM](.\SSMimg\SSM.png)
 
 ## 1.1 config层
 
@@ -108,9 +108,9 @@ public class JdbcConfig {
 
 # 2.异常处理
 
-![异常处理器](E:\笔记\SSMimg\异常处理器.png)
+![异常处理器](.\SSMimg\异常处理器.png)
 
-![异常处理器解决方法](E:\笔记\SSMimg\异常处理器解决方法.png)
+![异常处理器解决方法](.\SSMimg\异常处理器解决方法.png)
 
 ```java
 @RestControllerAdvice
@@ -125,72 +125,72 @@ public class ProjectExceptionAdvice {
 
 ## 2.1 RestContrllerAdvice
 
-![RestContrllerAdvice](E:\笔记\SSMimg\RestContrllerAdvice.png)
+![RestContrllerAdvice](.\SSMimg\RestContrllerAdvice.png)
 
 ## 2.2 ExceptionHandler
 
-![ExceptionHandler](E:\笔记\SSMimg\ExceptionHandler.png)
+![ExceptionHandler](.\SSMimg\ExceptionHandler.png)
 
 # 3.项目异常
 
 ## 3.1 项目异常分类
 
-![项目异常分类](E:\笔记\SSMimg\项目异常分类.png)
+![项目异常分类](.\SSMimg\项目异常分类.png)
 
 ## 3.2 项目异常处理
 
-![项目异常处理](E:\笔记\SSMimg\项目异常处理.png)
+![项目异常处理](.\SSMimg\项目异常处理.png)
 
 ## 3.3 拦截处理异常
 
-![拦截处理异常](E:\笔记\SSMimg\拦截处理异常.png)
+![拦截处理异常](.\SSMimg\拦截处理异常.png)
 
 # 4.拦截器(interceptor)
 
-![拦截器概念](E:\笔记\SSMimg\拦截器概念.png)
+![拦截器概念](.\SSMimg\拦截器概念.png)
 
-![拦截器概念2](E:\笔记\SSMimg\拦截器概念2.png)
+![拦截器概念2](.\SSMimg\拦截器概念2.png)
 
 ## 4.1 拦截器与过滤器区别
 
-![拦截器与过滤器区别](E:\笔记\SSMimg\拦截器与过滤器区别.png)
+![拦截器与过滤器区别](.\SSMimg\拦截器与过滤器区别.png)
 
 ## 4.2 拦截器HandlerInterceptor
 
 ### 4.2.1 创建HandlerInterceptor
 
-![拦截器HandlerInterceptor](E:\笔记\SSMimg\拦截器HandlerInterceptor.png)
+![拦截器HandlerInterceptor](.\SSMimg\拦截器HandlerInterceptor.png)
 
 ### 4.2.2 定义配置类
 
-![定义配置类](E:\笔记\SSMimg\定义配置类.png)
+![定义配置类](.\SSMimg\定义配置类.png)
 
 ### 4.2.3 添加拦截器
 
-![添加拦截器](E:\笔记\SSMimg\添加拦截器.png)
+![添加拦截器](.\SSMimg\添加拦截器.png)
 
 ### 4.2.4 使用简化开发
 
-![使用简化开发](E:\笔记\SSMimg\使用简化开发.png)
+![使用简化开发](.\SSMimg\使用简化开发.png)
 
 ## 4.3 拦截器执行流程
 
-![拦截器执行流程](E:\笔记\SSMimg\拦截器执行流程.png)
+![拦截器执行流程](.\SSMimg\拦截器执行流程.png)
 
 ## 4.4 拦截器参数
 
 ### 4.4.1 前置处理
 
-![前置处理](E:\笔记\SSMimg\前置处理.png)
+![前置处理](.\SSMimg\前置处理.png)
 
 ### 4.4.2 后置处理
 
-![后置处理](E:\笔记\SSMimg\后置处理.png)
+![后置处理](.\SSMimg\后置处理.png)
 
 ### 4.4.3 完成后处理
 
-![完成后处理](E:\笔记\SSMimg\完成后处理.png)
+![完成后处理](.\SSMimg\完成后处理.png)
 
 ## 4.5 多拦截器执行顺序
 
-![多拦截器执行顺序](E:\笔记\SSMimg\多拦截器执行顺序.png)
+![多拦截器执行顺序](.\SSMimg\多拦截器执行顺序.png)

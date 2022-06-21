@@ -4632,8 +4632,6 @@ public synchronized static void receive() {
 
 ![线程常见问题](.\img\线程常见问题.png)
 
-### 
-
 ## 2.线程ExecutorService常用方法
 
 ![线程ExecutorService常用方法](.\img\线程ExecutorService常用方法.png)
@@ -4743,7 +4741,20 @@ public class MyCallable implements Callable<String>{    private int n;    public
 ![InetAddress的使用](.\img\InetAddress的使用.png)
 
 ```java
-// 1.获取本机地址对象。InetAddress ip1 = InetAddress.getLocalHost();System.out.println(ip1.getHostName());System.out.println(ip1.getHostAddress());// 2.获取域名ip对象InetAddress ip2 = InetAddress.getByName("www.baidu.com");System.out.println(ip2.getHostName());System.out.println(ip2.getHostAddress());// 3.获取公网IP对象。InetAddress ip3 = InetAddress.getByName("112.80.248.76");System.out.println(ip3.getHostName());System.out.println(ip3.getHostAddress());// 4.判断是否能通： ping  5s之前测试是否可通System.out.println(ip3.isReachable(5000));
+// 1.获取本机地址对象。
+InetAddress ip1 = InetAddress.getLocalHost();
+System.out.println(ip1.getHostName());
+System.out.println(ip1.getHostAddress());
+// 2.获取域名ip对象
+InetAddress ip2 = InetAddress.getByName("www.baidu.com");
+System.out.println(ip2.getHostName());
+System.out.println(ip2.getHostAddress());
+// 3.获取公网IP对象。
+InetAddress ip3 = InetAddress.getByName("112.80.248.76");
+System.out.println(ip3.getHostName());
+System.out.println(ip3.getHostAddress());
+// 4.判断是否能通： ping  5s之前测试是否可通
+System.out.println(ip3.isReachable(5000));
 ```
 
 ## 2.端口号
@@ -4789,7 +4800,18 @@ public class MyCallable implements Callable<String>{    private int n;    public
 ### 1.一对一发送 
 
 ```java
-System.out.println("=====客户端启动======");// 1、创建发送端对象：发送端自带默认的端口号（人）DatagramSocket socket = new DatagramSocket(6666);// 2、创建一个数据包对象封装数据（韭菜盘子）/** public DatagramPacket(byte buf[], int length, InetAddress address, int port) 参数一：封装要发送的数据（韭菜） 参数二：发送数据的大小 参数三：服务端的主机IP地址 参数四：服务端的端口 */byte[] buffer = "我是一颗快乐的韭菜，你愿意吃吗？".getBytes();DatagramPacket packet = new DatagramPacket( buffer, buffer.length,        InetAddress.getLocalHost() , 8888);// 3、发送数据出去socket.send(packet);socket.close();
+System.out.println("=====客户端启动======");
+// 1、创建发送端对象：发送端自带默认的端口号（人）
+DatagramSocket socket = new DatagramSocket(6666);
+// 2、创建一个数据包对象封装数据（韭菜盘子）
+/** 
+public DatagramPacket(byte buf[], int length, InetAddress address, int port) 
+参数一：封装要发送的数据（韭菜） 参数二：发送数据的大小 参数三：服务端的主机IP地址 参数四：服务端的端口 */
+byte[] buffer = "我是一颗快乐的韭菜，你愿意吃吗？".getBytes();
+DatagramPacket packet = new DatagramPacket( buffer, buffer.length,        InetAddress.getLocalHost() , 8888);
+// 3、发送数据出去
+socket.send(packet);
+socket.close();
 ```
 
 ```java

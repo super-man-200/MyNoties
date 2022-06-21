@@ -1,50 +1,50 @@
 # 	什么是JavaWeb
 
-![什么是JavaWeb](E:\笔记\JavaScriptimg\什么是JavaWeb.png)
+![什么是JavaWeb](.\JavaScriptimg\什么是JavaWeb.png)
 
-![JavaWeb框架](E:\笔记\JavaWebimg\JavaWeb框架.png)
+![JavaWeb框架](.\JavaWebimg\JavaWeb框架.png)
 
 # 1.HTTP
 
-![HTTP](E:\笔记\JavaWebimg\HTTP.png)
+![HTTP](.\JavaWebimg\HTTP.png)
 
 ## 1.HTTP请求数据格式
 
-![HTTP请求数据格式](E:\笔记\JavaWebimg\HTTP请求数据格式.png)
+![HTTP请求数据格式](.\JavaWebimg\HTTP请求数据格式.png)
 
 ## 2.HTTP响应数据格式
 
-![HTTP响应数据格式](E:\笔记\JavaWebimg\HTTP响应数据格式.png)
+![HTTP响应数据格式](.\JavaWebimg\HTTP响应数据格式.png)
 
 ## 2.Web服务器(Tomcat)
 
-![Tomcat](E:\笔记\JavaWebimg\Tomcat.png)
+![Tomcat](.\JavaWebimg\Tomcat.png)
 
-![Web服务器小结](E:\笔记\JavaWebimg\Web服务器小结.png)
+![Web服务器小结](.\JavaWebimg\Web服务器小结.png)
 
 # 2.Tomcat
 
-![Tomcat基本使用](E:\笔记\JavaWebimg\Tomcat基本使用.png)
+![Tomcat基本使用](.\JavaWebimg\Tomcat基本使用.png)
 
 ## 1.Tomcat配置
 
-![Tomcat配置](E:\笔记\JavaWebimg\Tomcat配置.png)
+![Tomcat配置](.\JavaWebimg\Tomcat配置.png)
 
 ## 2.Tomcat部署项目
 
-![Tomcat部署项目](E:\笔记\JavaWebimg\Tomcat部署项目.png)
+![Tomcat部署项目](.\JavaWebimg\Tomcat部署项目.png)
 
 ## 3.IDEA中创建Maven Web项目
 
-![IDEA中创建Maven Web项目](E:\笔记\JavaWebimg\IDEA中创建Maven Web项目.png)
+![IDEA中创建Maven Web项目](.\JavaWebimg\IDEA中创建Maven Web项目.png)
 
 ### 1.使用骨架
 
-![使用骨架](E:\笔记\JavaWebimg\使用骨架.png)
+![使用骨架](.\JavaWebimg\使用骨架.png)
 
 ### 2.不使用骨架
 
-![不使用骨架](E:\笔记\JavaWebimg\不使用骨架.png)
+![不使用骨架](.\JavaWebimg\不使用骨架.png)
 
 # 4.IDEA中使用Tomcat
 
@@ -52,23 +52,23 @@
 
 ## 1.集成本地Tomcat
 
-![集成本地Tomcat](E:\笔记\JavaWebimg\集成本地Tomcat.png)
+![集成本地Tomcat](.\JavaWebimg\集成本地Tomcat.png)
 
 ## 2.Tomcat Maven插件
 
-![Tomcat Maven插件](E:\笔记\JavaWebimg\Tomcat Maven插件.png)
+![Tomcat Maven插件](.\JavaWebimg\Tomcat Maven插件.png)
 
 # 5.Servlet
 
-![Servlet快速入门](E:\笔记\JavaWebimg\Servlet快速入门.png)
+![Servlet快速入门](.\JavaWebimg\Servlet快速入门.png)
 
 ## 1.servlet执行流程
 
-![servlet执行流程](E:\笔记\JavaWebimg\servlet执行流程.png)
+![servlet执行流程](.\JavaWebimg\servlet执行流程.png)
 
 ## 2.servlet生命周期
 
-![servlet生命周期](E:\笔记\JavaWebimg\servlet生命周期.png)
+![servlet生命周期](.\JavaWebimg\servlet生命周期.png)
 
 ### 1.init
 
@@ -95,11 +95,11 @@ public class ServletDemo1 implements Servlet {
 
 #### 1.当loadOnStartup值为默认值时
 
-![init默认值](E:\笔记\JavaWebimg\init默认值.png)
+![init默认值](.\JavaWebimg\init默认值.png)
 
 #### 2.当loadOnStartup值为正整数时
 
-![init正整数](E:\笔记\JavaWebimg\init正整数.png)
+![init正整数](.\JavaWebimg\init正整数.png)
 
 ### 2.service
 
@@ -121,15 +121,15 @@ public void service(ServletRequest servletRequest, ServletResponse servletRespon
 
 ### 3.destroy
 
-![destroy](E:\笔记\JavaWebimg\destroy.png)
+![destroy](.\JavaWebimg\destroy.png)
 
 ## 3.servlet方法介绍
 
-![servlet方法介绍](E:\笔记\JavaWebimg\servlet方法介绍.png)
+![servlet方法介绍](.\JavaWebimg\servlet方法介绍.png)
 
 ## 4.servlet体系结构
 
-![servlet体系结构](E:\笔记\JavaWebimg\servlet体系结构.png)
+![servlet体系结构](.\JavaWebimg\servlet体系结构.png)
 
 ### 1.get
 
@@ -152,13 +152,13 @@ public class ServletDemo2 extends HttpServlet {
 }
 ```
 
-![默认get方式传输](E:\笔记\JavaWebimg\默认get方式传输.png)
+![默认get方式传输](.\JavaWebimg\默认get方式传输.png)
 
 ### 2.post
 
-![post](E:\笔记\JavaWebimg\post.png)
+![post](.\JavaWebimg\post.png)
 
-![post2](E:\笔记\JavaWebimg\post2.png)
+![post2](.\JavaWebimg\post2.png)
 
 ### 3.MyHttpServlet
 
@@ -212,9 +212,9 @@ public class ServletDemo3 extends MyHttpServlet{
 
 ## 5.Servlet urlPattern配置
 
-![Servlet urlPattern配置](E:\笔记\JavaWebimg\Servlet urlPattern配置.png)
+![Servlet urlPattern配置](.\JavaWebimg\Servlet urlPattern配置.png)
 
- ![配置规则](E:\笔记\JavaWebimg\配置规则.png)
+ ![配置规则](.\JavaWebimg\配置规则.png)
 
 **当精确匹配和目录匹配同时满足，则精确匹配先执行**
 
@@ -222,23 +222,23 @@ servlet项目中默认配置了/，用于访问静态资源，如果我们使用
 
 ## 6.xml配置servlet
 
-![xml配置servlet](E:\笔记\JavaWebimg\xml配置servlet.png)
+![xml配置servlet](.\JavaWebimg\xml配置servlet.png)
 
 # 6.Request&Response
 
-![Request&Response](E:\笔记\JavaWebimg\Request&Response.png)
+![Request&Response](.\JavaWebimg\Request&Response.png)
 
 ## 1.Request
 
 ### 1.Request继承体系
 
-![Request继承体系](E:\笔记\JavaWebimg\Request继承体系.png)
+![Request继承体系](.\JavaWebimg\Request继承体系.png)
 
 ### 2.Request获取请求数据
 
 #### 1.请求行
 
-![请求行](E:\笔记\JavaWebimg\请求行.png)
+![请求行](.\JavaWebimg\请求行.png)
 
 ```java
 @Override
@@ -264,7 +264,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 
 #### 2.请求头
 
-![请求头](E:\笔记\JavaWebimg\请求头.png)
+![请求头](.\JavaWebimg\请求头.png)
 
 ```java
 //获取请求头
@@ -274,7 +274,7 @@ System.out.println(header);
 
 #### 3.请求体
 
-![请求体](E:\笔记\JavaWebimg\请求体.png)
+![请求体](.\JavaWebimg\请求体.png)
 
 ```java
 @Override
@@ -291,7 +291,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 
 ### 3.Request请求参数
 
-![request请求参数](E:\笔记\JavaWebimg\request请求参数.png)
+![request请求参数](.\JavaWebimg\request请求参数.png)
 
 #### 1.使用map集合
 
@@ -340,19 +340,19 @@ protected void doPost(ServletRequest servletRequest, ServletResponse servletResp
 
 #### 创建模板
 
-![创建模板](E:\笔记\JavaWebimg\创建模板.png)
+![创建模板](.\JavaWebimg\创建模板.png)
 
 #### 更改模板
 
-![request模板](E:\笔记\JavaWebimg\request模板.png)
+![request模板](.\JavaWebimg\request模板.png)
 
 ### 5.中文乱码
 
-![处理乱码](E:\笔记\JavaWebimg\处理乱码.png)
+![处理乱码](.\JavaWebimg\处理乱码.png)
 
 #### 1.post
 
-![post中文乱码](E:\笔记\JavaWebimg\post中文乱码.png)
+![post中文乱码](.\JavaWebimg\post中文乱码.png)
 
 使用post解决乱码问题
 
@@ -401,7 +401,7 @@ tomcat8以后默认编码为utf-8，就不需要我们再去设置了
 
 ### 6.Request请求转发
 
-![请求转发](E:\笔记\JavaWebimg\请求转发.png)
+![请求转发](.\JavaWebimg\请求转发.png)
 
 ```java
 @WebServlet("/demo7")
@@ -442,11 +442,11 @@ public class ServletDemo8 extends HttpServlet {
 
 ### 1.设置响应数据设置
 
-![response响应数据介绍](E:\笔记\JavaWebimg\response响应数据介绍.png)
+![response响应数据介绍](.\JavaWebimg\response响应数据介绍.png)
 
 ### 2.重定向
 
-![response重定向](E:\笔记\JavaWebimg\response重定向.png)
+![response重定向](.\JavaWebimg\response重定向.png)
 
 方法一
 
@@ -465,7 +465,7 @@ resp.sendRedirect("/tomcat-demo4/resp2");
 
 ### 3.路径问题
 
-![路径问题](E:\笔记\JavaWebimg\路径问题.png)
+![路径问题](.\JavaWebimg\路径问题.png)
 
 
 
@@ -478,7 +478,7 @@ resp.sendRedirect(contextPath + "/resp2");
 
 ### 4.响应字符数据
 
-![response响应字符数据](E:\笔记\JavaWebimg\response响应字符数据.png)
+![response响应字符数据](.\JavaWebimg\response响应字符数据.png)
 
 ```java
 @Override
@@ -514,7 +514,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 
 ### 5.相应字节数据
 
-![response响应字节数据](E:\笔记\JavaWebimg\response响应字节数据.png)
+![response响应字节数据](.\JavaWebimg\response响应字节数据.png)
 
 ```java
 @Override
@@ -551,55 +551,55 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 
 ## JSP简介
 
-![JSP简介](E:\笔记\JavaWebimg\JSP简介.png)
+![JSP简介](.\JavaWebimg\JSP简介.png)
 
 ## 1.JSP快速入门
 
-![JSP快速入门](E:\笔记\JavaWebimg\JSP快速入门.png)
+![JSP快速入门](.\JavaWebimg\JSP快速入门.png)
 
 ## 2.JSP原理
 
-![JSP原理](E:\笔记\JavaWebimg\JSP原理.png)
+![JSP原理](.\JavaWebimg\JSP原理.png)
 
 ## 3.JSP脚本
 
-![JSP脚本](E:\笔记\JavaWebimg\JSP脚本.png)
+![JSP脚本](.\JavaWebimg\JSP脚本.png)
 
 ## 4.JSP缺点
 
-![JSP缺点](E:\笔记\JavaWebimg\JSP缺点.png)
+![JSP缺点](.\JavaWebimg\JSP缺点.png)
 
 # 8.EL表达式
 
-![EL表达式](E:\笔记\JavaWebimg\EL表达式.png)
+![EL表达式](.\JavaWebimg\EL表达式.png)
 
 # 9.JSTL
 
-![JSTL标签](E:\笔记\JavaWebimg\JSTL标签.png)
+![JSTL标签](.\JavaWebimg\JSTL标签.png)
 
 ## JSTL快速入门
 
-![JSTL快速入门](E:\笔记\JavaWebimg\JSTL快速入门.png)
+![JSTL快速入门](.\JavaWebimg\JSTL快速入门.png)
 
 ## forEach
 
-![JSTLforEach](E:\笔记\JavaWebimg\JSTLforEach.png)
+![JSTLforEach](.\JavaWebimg\JSTLforEach.png)
 
 # 10.MVC模式
 
-![MVC模式](E:\笔记\JavaWebimg\MVC模式.png)
+![MVC模式](.\JavaWebimg\MVC模式.png)
 
 ## 1.三层架构
 
-![三层架构](E:\笔记\JavaWebimg\三层架构.png)
+![三层架构](.\JavaWebimg\三层架构.png)
 
 ## 2.三层架构解析
 
-![三层架构解析](E:\笔记\JavaWebimg\三层架构解析.png)
+![三层架构解析](.\JavaWebimg\三层架构解析.png)
 
 # 11.Cookie
 
-![Cookie基本使用](E:\笔记\JavaWebimg\Cookie基本使用.png)
+![Cookie基本使用](.\JavaWebimg\Cookie基本使用.png)
 
 ## 1.创建Cookie
 
@@ -633,11 +633,11 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 
 ## 3.Cookie原理
 
-![Cookie原理](E:\笔记\JavaWebimg\Cookie原理.png)
+![Cookie原理](.\JavaWebimg\Cookie原理.png)
 
 ## 4.设置Cookie存活时间
 
-![Cookie使用细节](E:\笔记\JavaWebimg\Cookie使用细节.png)
+![Cookie使用细节](.\JavaWebimg\Cookie使用细节.png)
 
 ```java
 //设置Cookie存活时间
@@ -647,7 +647,7 @@ c.setMaxAge(t);
 
 ## 5.设置字符转码
 
-![Cookie存储中文](E:\笔记\JavaWebimg\Cookie存储中文.png)
+![Cookie存储中文](.\JavaWebimg\Cookie存储中文.png)
 
 ```
 //转码
@@ -661,7 +661,7 @@ URLDncoder.encode(变量,"字符编码");
 
 # 12.Session
 
-![Session](E:\笔记\JavaWebimg\Session.png)
+![Session](.\JavaWebimg\Session.png)
 
 ## 1.创建Session
 
@@ -690,19 +690,19 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 
 ## 3.Session原理
 
-![Session原理](E:\笔记\JavaWebimg\Session原理.png)
+![Session原理](.\JavaWebimg\Session原理.png)
 
-![JSSESSIONID](E:\笔记\JavaWebimg\JSSESSIONID.png)
+![JSSESSIONID](.\JavaWebimg\JSSESSIONID.png)
 
 ## 4.Session使用细节
 
-![Session使用细节](E:\笔记\JavaWebimg\Session使用细节.png)
+![Session使用细节](.\JavaWebimg\Session使用细节.png)
 
 ## 5.销毁
 
 ### 1.设置session自动销毁
 
-![设置session自动销毁](E:\笔记\JavaWebimg\设置session自动销毁.png)
+![设置session自动销毁](.\JavaWebimg\设置session自动销毁.png)
 
 ### 2.调用invalidate方法
 
@@ -717,11 +717,11 @@ s.invalidate();
 
 # 13.Cookie和Session小结
 
-![Cookie和Session小结](E:\笔记\JavaWebimg\Cookie和Session小结.png)
+![Cookie和Session小结](.\JavaWebimg\Cookie和Session小结.png)
 
 # 14.JSP中获取Cookie
 
-![JSP中获取Cookie](E:\笔记\JavaWebimg\JSP中获取Cookie.png)
+![JSP中获取Cookie](.\JavaWebimg\JSP中获取Cookie.png)
 
 ## 1.注册
 
@@ -767,49 +767,49 @@ public static User getUser(String name, String password){
 
 ## 1.Filter快速入门
 
-![Filter快速入门](E:\笔记\JavaWebimg\Filter快速入门.png)
+![Filter快速入门](.\JavaWebimg\Filter快速入门.png)
 
 ## 2.Filter执行流程
 
-![Filter执行流程](E:\笔记\JavaWebimg\Filter执行流程.png)
+![Filter执行流程](.\JavaWebimg\Filter执行流程.png)
 
 ## 3.Filter拦截路劲配置
 
-![Filter拦截路劲配置](E:\笔记\JavaWebimg\Filter拦截路劲配置.png)
+![Filter拦截路劲配置](.\JavaWebimg\Filter拦截路劲配置.png)
 
 ## 4.过滤器链
 
-![过滤器链](E:\笔记\JavaWebimg\过滤器链.png)
+![过滤器链](.\JavaWebimg\过滤器链.png)
 
-![过滤器链执行](E:\笔记\JavaWebimg\过滤器链执行.png)
+![过滤器链执行](.\JavaWebimg\过滤器链执行.png)
 
 # 16.监听器
 
-![Listener](E:\笔记\JavaWebimg\Listener.png)
+![Listener](.\JavaWebimg\Listener.png)
 
 ## ServletContextListener
 
-![ServletContextListener](E:\笔记\JavaWebimg\ServletContextListener.png)
+![ServletContextListener](.\JavaWebimg\ServletContextListener.png)
 
 # 17.AJAX
 
-![AJAX](E:\笔记\JavaWebimg\AJAX.png)
+![AJAX](.\JavaWebimg\AJAX.png)
 
 ## 1.异步和同步
 
-![同步异步](E:\笔记\JavaWebimg\同步异步.png)
+![同步异步](.\JavaWebimg\同步异步.png)
 
 ## 2.AJAX快速入门
 
-![AJAX快速入门](E:\笔记\JavaWebimg\AJAX快速入门.png)
+![AJAX快速入门](.\JavaWebimg\AJAX快速入门.png)
 
 # 18.Axios
 
-![Axios](E:\笔记\JavaWebimg\Axios.png)
+![Axios](.\JavaWebimg\Axios.png)
 
 ## 1.Axios基本使用
 
-![Axios基本使用](E:\笔记\JavaWebimg\Axios基本使用.png)
+![Axios基本使用](.\JavaWebimg\Axios基本使用.png)
 
 ```json
 //get
@@ -834,7 +834,7 @@ axios({
 
 ## 2.Axios别名
 
-![Axios别名](E:\笔记\JavaWebimg\Axios别名.png)
+![Axios别名](.\JavaWebimg\Axios别名.png)
 
 ```json
 //get
@@ -849,15 +849,15 @@ axios.get("http://localhost:8080/Cookie/axios","username=whh").then(function (re
 
 # 19.JSON
 
-![JSON](E:\笔记\JavaWebimg\JSON.png)
+![JSON](.\JavaWebimg\JSON.png)
 
 ## 1.JSON基础语法
 
-![JSON基础语法](E:\笔记\JavaWebimg\JSON基础语法.png)
+![JSON基础语法](.\JavaWebimg\JSON基础语法.png)
 
 ## 2.JSON和Java对象的转换
 
-![JSON和Java对象转换](E:\笔记\JavaWebimg\JSON和Java对象转换.png)
+![JSON和Java对象转换](.\JavaWebimg\JSON和Java对象转换.png)
 
 ```java
 public class JSONtest {
@@ -878,19 +878,19 @@ public class JSONtest {
 
 # 20.Vue
 
-![Vue](E:\笔记\JavaWebimg\Vue.png)
+![Vue](.\JavaWebimg\Vue.png)
 
 ## 1.Vue基本使用
 
-![Vue基本使用](E:\笔记\JavaWebimg\Vue基本使用.png)
+![Vue基本使用](.\JavaWebimg\Vue基本使用.png)
 
 ## 2.Vue常用指令
 
-![Vue常用指令](E:\笔记\JavaWebimg\Vue常用指令.png)
+![Vue常用指令](.\JavaWebimg\Vue常用指令.png)
 
 ### 1.v-bind
 
-![v-bind](E:\笔记\JavaWebimg\v-bind.png)
+![v-bind](.\JavaWebimg\v-bind.png)
 
 ```html
 <div id="app">
@@ -914,7 +914,7 @@ public class JSONtest {
 
 ### 2.v-on
 
-![v-on](E:\笔记\JavaWebimg\v-on.png)
+![v-on](.\JavaWebimg\v-on.png)
 
 ```html
 <div id="app">
@@ -935,7 +935,7 @@ public class JSONtest {
 
 ### 3.v-if and v-show
 
-![v-if and v-show](E:\笔记\JavaWebimg\v-if and v-show.png)
+![v-if and v-show](.\JavaWebimg\v-if and v-show.png)
 
 ```html
 <div id="app">
@@ -966,7 +966,7 @@ public class JSONtest {
 
 ### 4.v-for
 
-![v-for](E:\笔记\JavaWebimg\v-for.png)
+![v-for](.\JavaWebimg\v-for.png)
 
 ```html
 <div id="app">
@@ -1001,15 +1001,15 @@ public class JSONtest {
 
 ## 3.Vue生命周期
 
-![Vue生命周期](E:\笔记\JavaWebimg\Vue生命周期.png)
+![Vue生命周期](.\JavaWebimg\Vue生命周期.png)
 
 ### 1.流程图
 
-![Vue生命周期流程图](E:\笔记\JavaWebimg\Vue生命周期流程图.png)
+![Vue生命周期流程图](.\JavaWebimg\Vue生命周期流程图.png)
 
 ### 2.mounted
 
-![mounted](E:\笔记\JavaWebimg\mounted.png)
+![mounted](.\JavaWebimg\mounted.png)
 
 ```html
 <div id="app">
@@ -1046,11 +1046,11 @@ public class JSONtest {
 
 # 21.Element
 
-![Element](E:\笔记\JavaWebimg\Element.png)
+![Element](.\JavaWebimg\Element.png)
 
 ## 1.Element快速入门
 
-![Element快速入门](E:\笔记\JavaWebimg\Element快速入门.png)
+![Element快速入门](.\JavaWebimg\Element快速入门.png)
 
 ```html
 <script src="js/vue.js"></script>
@@ -1060,6 +1060,6 @@ public class JSONtest {
 
 ## 2.element布局
 
-![element布局](E:\笔记\JavaWebimg\element布局.png)
+![element布局](.\JavaWebimg\element布局.png)
 
  
