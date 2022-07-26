@@ -1,4 +1,4 @@
-# 1.java入门
+#  java入门
 
 ## 1.基础知识
 
@@ -4639,7 +4639,28 @@ public synchronized static void receive() {
 ### 2.线程处理Runnable任务
 
 ```java
- // 1、创建线程池对象        /**         public ThreadPoolExecutor(int corePoolSize,                                 int maximumPoolSize,                                 long keepAliveTime,                                 TimeUnit unit,                                 BlockingQueue<Runnable> workQueue,                                 ThreadFactory threadFactory,                                 RejectedExecutionHandler handler)         */        ExecutorService pool = new ThreadPoolExecutor(3, 5 ,                6, TimeUnit.SECONDS, new ArrayBlockingQueue<>(5) , Executors.defaultThreadFactory(),               new ThreadPoolExecutor.AbortPolicy() );        // 2、给任务线程池处理。        Runnable target = new MyRunnable();        pool.execute(target);        pool.execute(target);        pool.execute(target);        pool.execute(target);        pool.execute(target);        pool.execute(target);        pool.execute(target);        pool.execute(target);        // 创建临时线程        pool.execute(target);        pool.execute(target);//        // 不创建，拒绝策略被触发！！！//        pool.execute(target);        // 关闭线程池（开发中一般不会使用）。        // pool.shutdownNow(); // 立即关闭，即使任务没有完成，会丢失任务的！        pool.shutdown(); // 会等待全部任务执行完毕之后再关闭（建议使用的）
+ // 1、创建线程池对象        /**        
+public ThreadPoolExecutor(int corePoolSize,                                 int maximumPoolSize,                                 long keepAliveTime,                                 TimeUnit unit,                                 BlockingQueue<Runnable> workQueue,                                 ThreadFactory threadFactory,                                 RejectedExecutionHandler handler)         
+    */        
+    ExecutorService pool = new ThreadPoolExecutor(3, 5 ,                6, TimeUnit.SECONDS, new ArrayBlockingQueue<>(5) , Executors.defaultThreadFactory(),               new ThreadPoolExecutor.AbortPolicy() );        
+// 2、给任务线程池处理。        
+Runnable target = new MyRunnable();       
+pool.execute(target);        
+pool.execute(target);        
+pool.execute(target);        
+pool.execute(target);        
+pool.execute(target);       
+pool.execute(target);       
+pool.execute(target);       
+pool.execute(target);       
+// 创建临时线程       
+pool.execute(target);       
+pool.execute(target);//        
+// 不创建，拒绝策略被触发！！！//       
+pool.execute(target);        
+// 关闭线程池（开发中一般不会使用）。        
+//  pool.shutdownNow(); // 立即关闭，即使任务没有完成，会丢失任务的！        
+pool.shutdown(); // 会等待全部任务执行完毕之后再关闭（建议使用的）
 ```
 
 #### 拒绝任务策略
@@ -4649,11 +4670,46 @@ public synchronized static void receive() {
 ## 3.线程处理Callable任务
 
 ```java
-// 1、创建线程池对象        /**         public ThreadPoolExecutor(int corePoolSize,                                 int maximumPoolSize,                                 long keepAliveTime,                                 TimeUnit unit,                                 BlockingQueue<Runnable> workQueue,                                 ThreadFactory threadFactory,                                 RejectedExecutionHandler handler)         */        ExecutorService pool = new ThreadPoolExecutor(3, 5 ,                6, TimeUnit.SECONDS, new ArrayBlockingQueue<>(5) , Executors.defaultThreadFactory(),               new ThreadPoolExecutor.AbortPolicy() );        // 2、给任务线程池处理。        Future<String> f1 = pool.submit(new MyCallable(100));        Future<String> f2 = pool.submit(new MyCallable(200));        Future<String> f3 = pool.submit(new MyCallable(300));        Future<String> f4 = pool.submit(new MyCallable(400));        Future<String> f5 = pool.submit(new MyCallable(500));//        String rs = f1.get();//        System.out.println(rs);        System.out.println(f1.get());        System.out.println(f2.get());        System.out.println(f3.get());        System.out.println(f4.get());        System.out.println(f5.get());
+// 1、创建线程池对象      
+/**        
+public ThreadPoolExecutor(int corePoolSize,                                 
+                          int maximumPoolSize,                                 
+                          long keepAliveTime,                                 
+                          TimeUnit unit,                                 
+                          BlockingQueue<Runnable> workQueue,                                 
+                          ThreadFactory threadFactory,                                 
+                          RejectedExecutionHandler handler)         
+ */  
+ExecutorService pool = new ThreadPoolExecutor(3, 5 , 6, TimeUnit.SECONDS, new ArrayBlockingQueue<>(5) , Executors.defaultThreadFactory(),new ThreadPoolExecutor.AbortPolicy() );        
+// 2、给任务线程池处理。        
+Future<String> f1 = pool.submit(new MyCallable(100));        
+Future<String> f2 = pool.submit(new MyCallable(200));        
+Future<String> f3 = pool.submit(new MyCallable(300));        
+Future<String> f4 = pool.submit(new MyCallable(400));        
+Future<String> f5 = pool.submit(new MyCallable(500));
+//        String rs = f1.get();
+//        System.out.println(rs);        
+System.out.println(f1.get());        
+System.out.println(f2.get());       
+System.out.println(f3.get());        
+System.out.println(f4.get());        
+System.out.println(f5.get());
 ```
 
 ```java
-public class MyCallable implements Callable<String>{    private int n;    public MyCallable(int n) {        this.n = n;    }    /**       2、重写call方法（任务方法）     */    @Override    public String call() throws Exception {        int sum = 0;        for (int i = 1; i <= n ; i++) {            sum += i;        }        return Thread.currentThread().getName()                + "执行 1-" + n+ "的和，结果是：" + sum;    }}
+public class MyCallable implements Callable<String>{    
+    private int n;    
+    public MyCallable(int n) {        
+        this.n = n;    
+    }    
+    /**       2、重写call方法（任务方法）     */    
+    @Override    
+    public String call() throws Exception {        
+        int sum = 0;        
+        for (int i = 1; i <= n ; i++) {            
+            sum += i;        
+        }       
+        return Thread.currentThread().getName() + "执行 1-" + n+ "的和，结果是：" + sum;    }}
 ```
 
 ## 4.Executor工具类实现线程池
@@ -4661,7 +4717,12 @@ public class MyCallable implements Callable<String>{    private int n;    public
 ![Executors常用方法](.\img\Executors常用方法.png)
 
 ```java
-// 1、创建固定线程数据的线程池ExecutorService pool = Executors.newFixedThreadPool(3);pool.execute(new MyRunnable());pool.execute(new MyRunnable());pool.execute(new MyRunnable());pool.execute(new MyRunnable()); // 已经没有多余线程了
+// 1、创建固定线程数据的线程池
+ExecutorService pool = Executors.newFixedThreadPool(3);
+pool.execute(new MyRunnable());
+pool.execute(new MyRunnable());
+pool.execute(new MyRunnable());
+pool.execute(new MyRunnable()); // 已经没有多余线程了
 ```
 
 ![Executors存在问题](.\img\Executors存在问题.png)
@@ -5882,20 +5943,6 @@ public class BufferedInputStream extends InputStream{
     public int read(byte[] buffer) {
         System.out.println("提供8KB的缓冲区，提高读数据性能~~~~");
         return is.read(buffer);
-    }
-}
-```
-
-```java
-public abstract class InputStream {
-    public abstract int read();
-    public abstract int read(byte[] buffer);
-}
-public class DecoratorPattern {
-    public static void main(String[] args) {
-        InputStream is = new BufferedInputStream(new FileInputStream());
-        System.out.println(is.read());
-        System.out.println(is.read(new byte[3]));
     }
 }
 ```
